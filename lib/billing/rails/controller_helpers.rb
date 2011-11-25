@@ -4,6 +4,7 @@ module Billing
       extend ActiveSupport::Concern
 
       included do
+        include Billing::Tab
         include Billing::Helpers
         include TransactionTracking
 

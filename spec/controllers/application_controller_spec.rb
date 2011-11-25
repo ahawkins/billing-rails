@@ -37,13 +37,13 @@ describe ApplicationController do
   describe "Tracking transactions" do
     controller do
       def index
-        debit! 5
-        debit! 2
-        debit! 3
+        debit 5
+        debit 2
+        debit 3
 
-        credit! 2
-        credit! 1
-        credit! 5
+        credit 2
+        credit 1
+        credit 5
         head :ok
       end
 
