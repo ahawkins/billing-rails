@@ -35,7 +35,7 @@ gem 'billing-rails'
 
 ## Using
 
-```
+```ruby
 # Using a before filter to check to see if the request
 # can even happen. 
 class BillableResourceController < ApplicationController
